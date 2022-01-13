@@ -1,0 +1,3 @@
+;; dune
+(executable
+ (name sliding))
