@@ -1,0 +1,4 @@
+;; dune
+(executable
+ (name navigation)
+ (libraries str))
