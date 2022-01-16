@@ -1,0 +1,113 @@
+# dune build diag.exe
+# OCAMLPARAM: unset
+# Workspace root: /Users/hex0punk/Projects/advent/2021/3
+$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/2n/9xy789ns1g1_tj5r37d89zw40000gn/T/duneca8886.output 2> /dev/null
+# Auto-detected concurrency: 8
+# disable binary cache
+$ /Users/hex0punk/.opam/4.10.2/bin/ocamlc.opt -config > /var/folders/2n/9xy789ns1g1_tj5r37d89zw40000gn/T/dunef65a30.output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dyn
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = "default"
+#  ; toplevel_path = Some External "/Users/hex0punk/.opam/4.10.2/lib/toplevel"
+#  ; ocaml_bin = External "/Users/hex0punk/.opam/4.10.2/bin"
+#  ; ocaml = Ok External "/Users/hex0punk/.opam/4.10.2/bin/ocaml"
+#  ; ocamlc = External "/Users/hex0punk/.opam/4.10.2/bin/ocamlc.opt"
+#  ; ocamlopt = Ok External "/Users/hex0punk/.opam/4.10.2/bin/ocamlopt.opt"
+#  ; ocamldep = Ok External "/Users/hex0punk/.opam/4.10.2/bin/ocamldep.opt"
+#  ; ocamlmklib = Ok External "/Users/hex0punk/.opam/4.10.2/bin/ocamlmklib.opt"
+#  ; env =
+#      map
+#        { "DUNE_OCAML_HARDCODED" : "/Users/hex0punk/.opam/4.10.2/lib"
+#        ; "DUNE_OCAML_STDLIB" : "/Users/hex0punk/.opam/4.10.2/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" : "/Users/hex0punk/Projects/advent/2021/3"
+#        ; "INSIDE_DUNE" :
+#            "/Users/hex0punk/Projects/advent/2021/3/_build/default"
+#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
+#            "/Users/hex0punk/Projects/advent/2021/3/_build/install/default/lib"
+#        ; "OCAMLPATH" :
+#            "/Users/hex0punk/Projects/advent/2021/3/_build/install/default/lib"
+#        ; "OCAMLTOP_INCLUDE_PATH" :
+#            "/Users/hex0punk/Projects/advent/2021/3/_build/install/default/lib/toplevel"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_path = [ External "/Users/hex0punk/.opam/4.10.2/lib" ]
+#  ; arch_sixtyfour = true
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; ocaml_config =
+#      { version = "4.10.2"
+#      ; standard_library_default = "/Users/hex0punk/.opam/4.10.2/lib/ocaml"
+#      ; standard_library = "/Users/hex0punk/.opam/4.10.2/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "cc"
+#      ; ocamlc_cflags = [ "-O2"; "-fno-strict-aliasing"; "-fwrapv" ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64"; "-D_REENTRANT" ]
+#      ; ocamlopt_cflags = [ "-O2"; "-fno-strict-aliasing"; "-fwrapv" ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64"; "-D_REENTRANT" ]
+#      ; bytecomp_c_compiler =
+#          [ "cc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-D_REENTRANT"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "cc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-D_REENTRANT"
+#          ]
+#      ; native_c_libraries = [ "-lm" ]
+#      ; cc_profile = []
+#      ; architecture = "arm64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "macosx"
+#      ; asm = [ "clang"; "-c"; "-Wno-trigraphs" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "aarch64-apple-darwin20.1.0"
+#      ; target = "aarch64-apple-darwin20.1.0"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X027"
+#      ; cmi_magic_number = "Caml1999I027"
+#      ; cmo_magic_number = "Caml1999O027"
+#      ; cma_magic_number = "Caml1999A027"
+#      ; cmx_magic_number = "Caml1999Y027"
+#      ; cmxa_magic_number = "Caml1999Z027"
+#      ; ast_impl_magic_number = "Caml1999M027"
+#      ; ast_intf_magic_number = "Caml1999N027"
+#      ; cmxs_magic_number = "Caml1999D027"
+#      ; cmt_magic_number = "Caml1999T027"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  }
+$ (cd _build/default && /Users/hex0punk/.opam/4.10.2/bin/refmt --print binary diag.re) > _build/default/diag.re.ml
+$ (cd _build/default && /Users/hex0punk/.opam/4.10.2/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I .diag.eobjs/byte -no-alias-deps -opaque -o .diag.eobjs/byte/dune__exe__Diag.cmo -c -impl diag.re.ml)
+$ (cd _build/default && /Users/hex0punk/.opam/4.10.2/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I .diag.eobjs/byte -I .diag.eobjs/native -intf-suffix .ml -no-alias-deps -opaque -o .diag.eobjs/native/dune__exe__Diag.cmx -c -impl diag.re.ml)
+$ (cd _build/default && /Users/hex0punk/.opam/4.10.2/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o diag.exe /Users/hex0punk/.opam/4.10.2/lib/ocaml/str.cmxa -I /Users/hex0punk/.opam/4.10.2/lib/ocaml .diag.eobjs/native/dune__exe__Diag.cmx)

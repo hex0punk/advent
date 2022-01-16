@@ -1,0 +1,4 @@
+;; dune
+(executable
+ (name diag)
+ (libraries str))
